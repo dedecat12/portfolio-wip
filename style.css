@@ -30,7 +30,34 @@ body{
     margin-left: 25px;
     font-family: 'Courgette', cursive;
 }
-
+.lead{
+    font-size:30px;
+    text-align: center;
+    font-family:'Roboto Mono', monospace;
+    color: #000;
+}
+.title-text{
+    font-size: 4rem;
+    text-align: center;
+    font-family:'Roboto Mono', monospace;
+    color: #000;
+    text-shadow: -5px 5px yellow;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.btn-light{
+    background:#fff;
+    color:#333;
+    border-left:2px solid #000;
+    border-bottom:2px solid #000;
+    text-decoration: none;
+}
 /* logo and navigation */
 header{
     display:flex;
@@ -66,9 +93,82 @@ header{
 
 /* home section */
 .home-styling{
-    background: red;
+    overflow: hidden;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-styling .container{
+    position: inherit;
+}
+.home-styling .container a{
+    margin-top:4rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.home-styling .parallax-img1{
+    position:absolute;
+    z-index: -1;
+    top: 100px;
+    left: 100px;
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.home-styling .parallax-img2{
+    position:absolute;
+    z-index: -1;
+    top: 130px;
+    left: 410px;
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.home-styling .parallax-img3{
+    position:absolute;
+    z-index: -1;
+    top: 430px;
+    left: 180px;
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.home-styling .parallax-img4{
+    position:absolute;
+    z-index: -1;
+    top: 130px;
+    left: 1100px;
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.home-styling .parallax-img5{
+    position:absolute;
+    z-index: -1;
+    top: 400px;
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.home-styling .parallax-img6{
+    position:absolute;
+    z-index: -1;
+    left: 750px;
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+.home-styling .parallax-img7{
+    position:absolute;
+    z-index: -1;
+    top: 500px;
+    left: 1000px;
+    width:100px;
+    height:100px;
+    object-fit: cover;
 }
 
 /* about-styling */
