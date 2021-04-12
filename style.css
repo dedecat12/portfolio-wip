@@ -52,12 +52,25 @@ body{
     align-items: center;
 }
 .btn-light{
-    background:#fff;
-    color:#333;
-    border-left:2px solid #000;
-    border-bottom:2px solid #000;
+    background:#89b5f0;
+    font-family:'Roboto Mono', monospace;
+    padding: 3px;
+    border-radius: 5px;
+    border-bottom:4px solid #b5f089;
     text-decoration: none;
+    position: relative;
+    transition: all 0.4s;
+    animation:bouncy 5s infinite linear;
 }
+@keyframes bouncy {
+    0%   {top: 5px;}
+    40%  {top: 5px;}
+    43%  {top: -3px;}
+    46%  {top: 5px;}
+    48%  {top: -4px;}
+    50%  {top: 5px;}
+    100% {top: 5px;}
+}  
 /* logo and navigation */
 header{
     display:flex;
@@ -89,6 +102,19 @@ header{
     color: #000;
     font-size:20px;
 }
+.navbar .nav-item a::after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 3px;
+    background: yellow;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+  }
+.navbar .nav-item a:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
 /*  */
 
 /* home section */
@@ -102,6 +128,7 @@ header{
 }
 .home-styling .container{
     position: inherit;
+    z-index: -1;
 }
 .home-styling .container a{
     margin-top:4rem;
